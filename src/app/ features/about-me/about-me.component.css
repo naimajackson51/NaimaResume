@@ -1,0 +1,58 @@
+.background {
+  height: 20%;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 33%;
+  left: 30%;
+  width: 37%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 26px;
+  text-align: center;
+  font-family: 'Baskerville Old Face';
+  border-radius: 30%;
+  background-blend-mode: color;
+}
+
+.me{
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  width: 32%;
+  height:85%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Baskerville Old Face';
+  border-radius: 30%;
+  background-blend-mode: color;
+}
+
+.overlay-body {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Baskerville Old Face';
+  border-radius: 30%;
+  background-blend-mode: color;
+  border:thick;
+}

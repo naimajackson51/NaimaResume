@@ -1,0 +1,28 @@
+
+.icon {
+  color: white;
+  padding-right:8%;
+}
+
+.toolbar{
+    background-color:black;
+    height:15%;
+
+
+}
+body{
+background-color:green;       
+}
+
+.name{
+    color:white;
+    
+}
+
+.logo{
+    height:230%;
+    width:10%;
+    margin-top:1%;
+    margin-left:40%;
+    
+}

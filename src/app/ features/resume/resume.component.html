@@ -1,0 +1,64 @@
+<div class="image-container">
+  <img class="background" src={{image}} />
+  <div class="overlay-text-left">
+    <div class="workDiv">
+      <h1><b>Work Experience</b></h1>
+      <div class="timeline">
+        <div *ngFor='let entry of timeLine;let i = index'>
+          <div class="container" [ngClass]="{ left: i%2!==0, right:i%2==0}">
+            <div class="content">
+              <h2>{{entry.place}}</h2>
+              <h3>{{entry.year}}</h3>
+              <p>{{entry.detail}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay-text-right">
+    <div class="educationDiv">
+      <h1><b>Education</b></h1>
+      <div class="timeline">
+        <div *ngFor='let entry of educationTimeLine;let i = index'>
+          <div class="edContainer" [ngClass]="{edLeft: i%2!==0, edRight:i%2==0}">
+            <div class="content">
+              <h2>{{entry.place}}</h2>
+              <h3>{{entry.year}}</h3>
+              <p>{{entry.detail}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hobbies">
+        <h1><b>Skills</b></h1>
+        <div class="l">
+          <div class="label">C#</div>
+          <div class="label">Microsoft SQL Server</div>
+          <div class="label">Angular</div>
+          <div class="label">Azure</div>
+          <div class="label">Postman</div>
+          <div class="label">Entity Framework</div>
+          <div class="label">Java</div>
+          <div class="label">Full Stack Development</div>
+        </div>
+        <div class="r">
+          <div class="scale"><app-scale [strength] ="30"></app-scale></div>
+          <div class="scale"><app-scale [strength]="30"></app-scale></div>
+          <div class="scale"><app-scale [strength]="40"></app-scale></div>
+          <div class="scale"><app-scale [strength]="30"></app-scale></div>
+          <div class="scale"><app-scale [strength]="40"></app-scale></div>
+          <div class="scale"><app-scale [strength]="40"></app-scale></div>
+          <div class="scale"><app-scale [strength]="20"></app-scale></div>
+          <div class="scale"><app-scale [strength]="40"></app-scale></div>
+          
+
+        </div>
+      </div>
+      <div>
+        <a href="assets/images/resume.pdf" download="resume.pdf">Download Local PDF</a>
+      </div>
+    </div>
+  </div>
+ </div>

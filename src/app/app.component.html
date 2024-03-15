@@ -1,0 +1,24 @@
+<body class="body">
+  <mat-toolbar class="toolbar">
+    <mat-toolbar-row>
+      <button (click)="redirect('home')" mat-icon-button class="icon" aria-label="Example icon-button with share icon">
+        Home
+      </button>
+      <button class="icon" (click)="redirect('about-me')" mat-icon-button aria-label="Example icon-button with menu icon">
+        About Me
+      </button>
+      <button mat-icon-button class="icon" (click)="redirect('resume')" aria-label="Example icon-button with heart icon">
+        Resume
+      </button>
+      <button mat-icon-button class="icon" (click)="redirect('projects')" aria-label="Example icon-button with share icon">
+        Projects
+      </button>
+      <button mat-icon-button class="icon" (click)="redirect('references')" aria-label="Example icon-button with share icon">
+        References
+      </button>
+      <img class="logo" src={{logo}} />
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <router-outlet class="outlet"></router-outlet>
+</body>
+
